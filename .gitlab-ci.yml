@@ -26,9 +26,8 @@ before_script:
 
 test:
   script:
-    # - python setup.py test
-    - pip install tox flake8  # you can also use tox
-    - tox -e py36,flake8
+    - pip install pytest pytest-cov
+    - pytest --cov=. --cov-branch --cov-report html
 
 # run:
 #   script:
