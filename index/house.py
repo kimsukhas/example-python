@@ -1,12 +1,5 @@
 """
-This example module shows various types of documentation available for use
-with pydoc.  To generate HTML documentation for this module issue the
-command:
-
-    - source venv/bin/activate
-    - cd doc
-    - make html
-
+Example module with example docs.
 """
 class House:
     """
