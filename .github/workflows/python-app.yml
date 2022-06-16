@@ -7,7 +7,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "develop" ]
+    branches: [ "patch-1" ]
 
 permissions:
   contents: read
@@ -28,7 +28,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest pylint
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        pylint $(git ls-files '*.py')
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
