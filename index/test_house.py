@@ -9,6 +9,6 @@ class HouseTestCase(unittest.TestCase):
         self.assertEqual(home.name.upper(), "KOEN")
 
     def test_house_with_age_10(self):
-        home = House("Koen", 10)
+        home = House("Koen", 5)
 
         self.assertEqual(home.age, 5)
